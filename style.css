@@ -1,13 +1,19 @@
+/* Propiedades globales */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Tipografía */
+
 body {
   font-family: "Manrope", sans-serif;
   margin-bottom: 40px;
 }
+
+/* Home */
 
 main {
   display: flex;
@@ -15,6 +21,8 @@ main {
   align-items: center;
   height: 90vh;
 }
+
+/* Biografía */
 
 .biography {
   width: 700px;
@@ -40,10 +48,11 @@ h2 strong {
 }
 
 .biography p {
-  letter-spacing: .6px;
+  letter-spacing: 0.6px;
   line-height: 24px;
   margin-bottom: 12px;
 }
+/* Enlaces debajo de la biografía */
 
 .links {
   background-color: rgb(241, 240, 240);
@@ -71,6 +80,8 @@ a:hover {
   filter: grayscale(100%);
   margin: 0 8px;
 }
+
+/* Conocimientos adquiridos */
 
 .knowledge {
   width: 700px;
@@ -100,6 +111,8 @@ a:hover {
   transform: translateY(-10px);
 }
 
+/* Flecha hacia abajo */
+
 .arrow {
   display: flex;
   justify-content: center;
@@ -117,6 +130,8 @@ a:hover {
   padding: 16px;
   cursor: pointer;
 }
+
+/* Comienzan los estilos del portafolio */
 
 .portfolio__container {
   margin-top: 40px;
@@ -137,6 +152,8 @@ a:hover {
   flex-wrap: wrap;
 }
 
+/* Estilos de cada portafolio */
+
 .projects {
   background-color: #fff;
   color: black;
@@ -153,7 +170,6 @@ a:hover {
 
 .projects:hover {
   transform: translateY(-10px);
-
 }
 
 .projects h3 {
@@ -171,14 +187,14 @@ a:hover {
   opacity: 0.8;
 }
 .projects p {
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-bottom: 18px;
 }
 
 .projects button {
   font-size: 1rem;
   background-color: rgba(241, 241, 240, 0.97);
-  border: 1px solid rgba(241, 241, 240, 0.97);;
+  border: 1px solid rgba(241, 241, 240, 0.97);
   margin: 0 2px;
   margin-left: 20px;
   margin-bottom: 10px;
@@ -201,8 +217,9 @@ a:hover {
   .biography h2 {
     font-size: 1rem;
   }
-  
 }
+
+/* Estilos responsive */
 
 @media screen and (max-width: 1200px) {
   body {
@@ -236,5 +253,11 @@ a:hover {
     margin: 4px;
     padding: 4px;
     border-radius: 8px;
+  }
+  .knowledge img:hover {
+    transform: translateY(-6px);
+  }
+  .projects:hover {
+    transform: translateY(-2px);
   }
 }
