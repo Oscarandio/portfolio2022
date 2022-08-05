@@ -263,8 +263,8 @@ a:hover {
   .knowledge img:hover {
     transform: translateY(-6px);
   }
-  .fa-chevron-down {
-    font-size: 1rem;
+  .arrow {
+    display: none;
   }
   .projects:hover {
     transform: translateY(-2px);
