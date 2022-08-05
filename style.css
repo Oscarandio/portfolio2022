@@ -1,25 +1,34 @@
+/* Propiedades globales */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Tipografía */
 
 body {
   font-family: "Manrope", sans-serif;
   margin-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* Home */
 
 main {
-  margin-top: 80px;
-  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 90vh;
+
 }
 
 /* Biografía */
 
 .biography {
-  width: 700px;
   margin: 0 60px;
+  max-width: 400px;
+
 }
 
 .biography h1 {
@@ -42,6 +51,7 @@ h2 strong {
 
 .biography p {
   letter-spacing: 0.6px;
+  line-height: 24px;
   margin-bottom: 12px;
 }
 /* Enlaces debajo de la biografía */
@@ -76,7 +86,7 @@ a:hover {
 /* Conocimientos adquiridos */
 
 .knowledge {
-  width: 700px;
+  max-width: 410px;
 }
 
 .knowledge h1 {
