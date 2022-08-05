@@ -19,7 +19,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 /* Biografía */
@@ -157,7 +157,7 @@ a:hover {
 .projects {
   background-color: #fff;
   color: black;
-  width: 460px;
+  max-width: 460px;
   margin: 10px 20px;
   padding: 6px 20px;
   text-align: justify;
@@ -233,7 +233,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     font-family: "Manrope", sans-serif;
-    max-height: 90vh;
+    max-height: 100vh;
   }
   .biography {
     max-width: 400px;
@@ -263,4 +263,13 @@ a:hover {
   .projects:hover {
     transform: translateY(-2px);
   }
+  
+.projects {
+  max-width: 400px;
+}
+.projects img {
+  max-width: 360px;
+  margin: 6px 0;
+  border-radius: 4px;
+}
 }
