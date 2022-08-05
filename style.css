@@ -19,16 +19,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 90vh;
-
+  height: 90vh;
 }
 
 /* Biografía */
 
 .biography {
+  width: 700px;
   margin: 0 60px;
-  max-width: 400px;
-
 }
 
 .biography h1 {
@@ -86,7 +84,7 @@ a:hover {
 /* Conocimientos adquiridos */
 
 .knowledge {
-  max-width: 410px;
+  width: 700px;
 }
 
 .knowledge h1 {
@@ -204,6 +202,9 @@ a:hover {
   width: 100px;
 }
 
+/* Estilos responsive */
+
+
 @media screen and (max-width: 1440px) {
   .knowledge img {
     width: 120px;
@@ -221,9 +222,8 @@ a:hover {
   }
 }
 
-/* Estilos responsive */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   body {
     font-size: 0.9rem;
   }
@@ -233,16 +233,17 @@ a:hover {
     justify-content: center;
     align-items: center;
     font-family: "Manrope", sans-serif;
+    max-height: 90vh;
   }
   .biography {
-    width: 420px;
+    max-width: 400px;
     margin: 8px;
   }
   .biography p {
     line-height: 18px;
   }
   .knowledge {
-    width: 420px;
+    max-width: 410px;
     margin: 8px;
   }
   .knowledge h1 {
