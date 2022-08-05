@@ -19,7 +19,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 /* Biografía */
@@ -33,6 +33,7 @@ main {
   font-size: 3rem;
   letter-spacing: 4px;
   font-weight: 700;
+  margin-bottom: 6px;
 }
 
 .biography h2 {
@@ -116,7 +117,6 @@ a:hover {
 .arrow {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
 }
 
 .fa-chevron-down:hover {
@@ -204,7 +204,6 @@ a:hover {
 
 /* Estilos responsive */
 
-
 @media screen and (max-width: 1440px) {
   .knowledge img {
     width: 120px;
@@ -222,10 +221,9 @@ a:hover {
   }
 }
 
-
 @media screen and (max-width: 1024px) {
   body {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   main {
     display: flex;
@@ -233,7 +231,13 @@ a:hover {
     justify-content: center;
     align-items: center;
     font-family: "Manrope", sans-serif;
-    max-height: 100vh;
+  }
+  .biography h1 {
+    font-size: 1.2rem;
+  }
+
+  .biography h2 {
+    font-size: .8rem;
   }
   .biography {
     max-width: 400px;
@@ -244,7 +248,6 @@ a:hover {
   }
   .knowledge {
     max-width: 410px;
-    margin: 8px;
   }
   .knowledge h1 {
     font-size: 1rem;
@@ -260,16 +263,18 @@ a:hover {
   .knowledge img:hover {
     transform: translateY(-6px);
   }
+  .fa-chevron-down {
+    font-size: 1rem;
+  }
   .projects:hover {
     transform: translateY(-2px);
   }
-  
-.projects {
-  max-width: 400px;
-}
-.projects img {
-  max-width: 360px;
-  margin: 6px 0;
-  border-radius: 4px;
-}
+  .projects {
+    max-width: 400px;
+  }
+  .projects img {
+    max-width: 360px;
+    margin: 6px 0;
+    border-radius: 4px;
+  }
 }
