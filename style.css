@@ -19,7 +19,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 85vh;
 }
 
 /* Biografía */
@@ -117,6 +117,15 @@ a:hover {
 .arrow {
   display: flex;
   justify-content: center;
+  
+}
+
+.arrow a {
+  font-size: 0.9rem;
+  color: black;
+  font-style: italic;
+  opacity: .7;
+  text-align: center;
 }
 
 .fa-chevron-down:hover {
@@ -129,6 +138,7 @@ a:hover {
   border-radius: 100%;
   padding: 16px;
   cursor: pointer;
+  margin-top: 8px;
 }
 
 /* Comienzan los estilos del portafolio */
@@ -202,6 +212,11 @@ a:hover {
   width: 100px;
 }
 
+.link-to-github {
+  margin-top: 18px;
+  text-align: center;
+}
+
 /* Estilos responsive */
 
 @media screen and (max-width: 1440px) {
@@ -237,7 +252,7 @@ a:hover {
   }
 
   .biography h2 {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .biography {
     max-width: 400px;
